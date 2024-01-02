@@ -4,12 +4,12 @@ import numpy as np
 from keras.models import load_model
 import cv2
 
-ruta_model= r'C:\Users\Peter\Desktop\2023-2\MACHINE LEARNING\Proyecto semestral\resnet.h5'
+ruta_model= r'resnet.h5'
 model= load_model(ruta_model)
 
 
 # Cargar la imagen
-img_path = r'C:\Users\Peter\Desktop\2023-2\MACHINE LEARNING\Proyecto semestral\SetImages\20230628-005500170_id40115361.png'
+img_path = r'SetImages\20230628-005500170_id40115361.png'
 img = cv2.imread(img_path)
 
 old_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
